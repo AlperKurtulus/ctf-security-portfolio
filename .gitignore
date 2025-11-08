@@ -1,3 +1,53 @@
+# ========================================
+# Security Testing Specific Patterns
+# ========================================
+
+# Tool outputs and scan results
+nmap/
+nmap_*
+enum_*/
+scan_*/
+gobuster/
+nikto/
+hydra/
+sqlmap/
+burp/
+
+# Logs and reports
+*.log
+logs/
+reports/
+*.report
+
+# Sensitive data (DO NOT COMMIT!)
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.txt
+passwords.txt
+secrets.txt
+config_backup.txt
+.env
+.env.local
+
+# Session and cookie data
+session_*
+cookies.txt
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Target lists
+targets.txt
+hosts.txt
+
+# ========================================
+# Python
+# ========================================
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
