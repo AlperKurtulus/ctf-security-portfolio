@@ -1,6 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
 
 # C extensions
@@ -205,3 +205,85 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ========================================
+# Security Tools & CTF Specific
+# ========================================
+
+# Tool Output Directories
+nmap/
+nmap_*
+gobuster/
+gobuster_*
+enum_*/
+scan_*/
+output/
+results/
+loot/
+
+# Log Files
+*.log
+logs/
+*.log.*
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Sensitive Information
+*.key
+*.pem
+*.cert
+*.p12
+*.pfx
+credentials.txt
+passwords.txt
+secrets.txt
+.env.local
+config.ini
+database.yml
+
+# Compiled Exploits
+*.exe
+*.dll
+*.so.bak
+a.out
+exploit
+
+# Wordlists (often large)
+wordlists/
+rockyou.txt
+*.wordlist
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# OS Specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Virtual Environments (additional)
+venv*/
+ENV*/
+.virtualenv
+
+# CTF Specific
+flags.txt
+proof.txt
+local.txt
+user.txt
+root.txt
