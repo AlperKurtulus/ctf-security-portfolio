@@ -18,7 +18,7 @@
 ## 📊 Portfolio Statistics
 
 - 🎯 **TryHackMe Rooms Completed:** 130+
-- 🏆 **Learning Paths Completed:** 3 (Jr Penetration Tester, Web Fundamentals, Pre Security)
+- 🏆 **Learning Paths Completed:** 4 (Jr Penetration Tester, Web Fundamentals, Pre Security, Cyber Security 101)
 - 💎 **Badges Earned:** 18
 - 🎓 **Root-me Challenges Solved:** 19 (14 App-Script + 5 Programming)
 - 🛠️ **Custom Security Tools:** Multiple automation scripts
