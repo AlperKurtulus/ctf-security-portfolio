@@ -229,7 +229,7 @@ Detailed solutions for programming and application scripting challenges:
 
 - **GitHub:** [@AlperKurtulus](https://github.com/AlperKurtulus)
 - **TryHackMe:** [TheJker](https://tryhackme.com/p/TheJker)
-- **LinkedIn:** [Connect with me](https://linkedin.com/in/alper-kurtulus)
+- **LinkedIn:** [Connect with me](https://linkedin.com/in/alper-kurtuluş-a51a782a7)
 
 ---
 
