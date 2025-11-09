@@ -1,7 +1,7 @@
 # TryHackMe Portfolio
 
 ![TryHackMe](https://img.shields.io/badge/TryHackMe-130%2B_Rooms-C11111?style=for-the-badge&logo=tryhackme)
-![Paths](https://img.shields.io/badge/Completed_Paths-3-success?style=for-the-badge)
+![Paths](https://img.shields.io/badge/Completed_Paths-4-success?style=for-the-badge)
 ![Badges](https://img.shields.io/badge/Badges-18-gold?style=for-the-badge)
 
 ## 📊 Overview
@@ -12,9 +12,10 @@ This directory contains comprehensive documentation of my TryHackMe journey, inc
 
 ### Statistics
 - **Rooms Completed:** 130+
-- **Learning Paths:** 3 (Jr Penetration Tester, Web Fundamentals, Pre Security)
+- **Learning Paths:** 4 (Jr Penetration Tester, Web Fundamentals, Pre Security, Cyber Security 101)
 - **Badges Earned:** 18
 - **Skill Level:** Actively learning and expanding expertise
+- **Last Updated:** November 9, 2025
 
 ---
 
@@ -25,10 +26,11 @@ Detailed writeups organized by category:
 
 ```
 writeups/
-├── web-security/          # Web application security challenges
-├── privilege-escalation/  # Linux and Windows privesc
-├── network-security/      # Network reconnaissance and exploitation
-└── boxes/                # Complete box walkthroughs
+├── boxes/                 # Complete box walkthroughs
+│   └── internal.md       # Internal box (Hard) - NEW!
+├── web-security/         # Web application security challenges
+├── privilege-escalation/ # Linux and Windows privesc
+└── network-security/     # Network reconnaissance and exploitation
 ```
 
 Each writeup includes:
@@ -68,8 +70,10 @@ badges/
 
 ## 🎯 Completed Learning Paths
 
-### 1. Jr Penetration Tester
-**Status:** ✅ Completed
+### 1. Jr Penetration Tester ✅
+**Status:** Completed  
+**Duration:** 3 months  
+**Rooms:** 25
 
 A comprehensive path covering essential penetration testing skills:
 - **Network Security:** Port scanning, service enumeration, network exploitation
@@ -83,8 +87,12 @@ A comprehensive path covering essential penetration testing skills:
 - Understanding security from an attacker's perspective
 - Professional reporting and documentation
 
-### 2. Web Fundamentals
-**Status:** ✅ Completed
+---
+
+### 2. Web Fundamentals ✅
+**Status:** Completed  
+**Duration:** 2 months  
+**Rooms:** 18
 
 In-depth exploration of web technologies and security:
 - **Web Technologies:** HTTP/HTTPS, DNS, cookies, sessions
@@ -96,180 +104,147 @@ In-depth exploration of web technologies and security:
 - Deep understanding of web application architecture
 - Identifying logic flaws and security misconfigurations
 - Manual and automated vulnerability testing
-- Burp Suite mastery
+- Web proxy usage and request manipulation
 
-### 3. Pre Security
-**Status:** ✅ Completed
+---
 
-Foundation in cybersecurity fundamentals:
-- **Networking Basics:** OSI model, TCP/IP, protocols
-- **Linux Fundamentals:** Command line, file system, permissions
-- **Windows Fundamentals:** File system, Active Directory basics
-- **Security Principles:** CIA triad, defense in depth
+### 3. Pre Security ✅
+**Status:** Completed  
+**Duration:** 1 month  
+**Rooms:** 14
+
+Foundational knowledge for cybersecurity:
+- **Networking Fundamentals:** OSI model, TCP/IP, protocols
+- **Linux Basics:** Command line, file system, permissions
+- **Windows Basics:** File system, user management, security features
+- **Career Guidance:** Roles, certifications, learning paths
 
 **Key Skills Acquired:**
-- Strong foundation in networking concepts
-- Comfortable with Linux and Windows environments
-- Understanding of fundamental security principles
-- Prepared for advanced security topics
+- Strong networking fundamentals
+- Linux and Windows system administration basics
+- Understanding of core security principles
+- Career direction and planning
 
 ---
 
-## 📈 Progress Tracking
+### 4. Cyber Security 101 ✅
+**Status:** Completed  
+**Duration:** 1 month  
+**Rooms:** 12
 
-For detailed room-by-room progress, see [PROGRESS.md](./PROGRESS.md)
+Introduction to cybersecurity concepts and practices:
+- **Security Fundamentals:** CIA triad, threat modeling, risk assessment
+- **Offensive Security:** Penetration testing methodology, red team operations
+- **Defensive Security:** Blue team operations, incident response, SOC
+- **Security Tools:** Introduction to common security tools and frameworks
 
-### Rooms by Category
-
-| Category | Rooms Completed |
-|----------|----------------|
-| Web Application Security | 30+ |
-| Injection Vulnerabilities | 16 |
-| Authentication & Authorization | 8 |
-| Network Security | 23 |
-| Linux Security | 6 |
-| Windows Security | 8 |
-| Tools & Exploitation | 11 |
-| Cryptography | 3 |
-| Fundamentals | 12 |
-| Defensive Security | 8 |
-| Specialized Topics | 7 |
-| Scripting & Programming | 4 |
-| CTF Boxes | 9 |
-| Miscellaneous | 4 |
+**Key Skills Acquired:**
+- Understanding of core security concepts
+- Introduction to offensive and defensive security
+- Security operations and monitoring basics
+- Foundation for advanced cybersecurity topics
 
 ---
 
-## 🎓 Key Learning Areas
+## 📈 Recent Achievements
 
-### Web Application Security
-- **SQL Injection:** Union-based, blind, error-based, time-based
-- **Cross-Site Scripting (XSS):** Stored, reflected, DOM-based
-- **Authentication Bypass:** Logic flaws, session hijacking, token manipulation
-- **File Upload Vulnerabilities:** Unrestricted upload, type bypass, path traversal
-- **Server-Side Attacks:** SSRF, XXE, SSTI, deserialization
+### Latest Writeup: Internal Box (Hard)
+**Completed:** November 9, 2025  
+**Time:** 4.5 hours  
+**Difficulty:** Hard
 
-### System Exploitation
-- **Linux Privilege Escalation:** SUID/SGID, sudo misconfigurations, cron jobs, kernel exploits
-- **Windows Privilege Escalation:** Unquoted service paths, token manipulation, registry exploits
-- **Remote Code Execution:** Command injection, file inclusion, deserialization
-- **Post-Exploitation:** Lateral movement, credential harvesting, persistence
+**Key Techniques:**
+- WordPress exploitation via theme editor
+- Manual credential hunting in `/opt` directory
+- SSH local port forwarding to access internal Jenkins
+- Jenkins Script Console exploitation (Groovy RCE)
+- Docker container enumeration and credential discovery
+- Multi-layered privilege escalation
 
-### Network Security
-- **Reconnaissance:** Nmap, service enumeration, OS fingerprinting
-- **Network Services:** FTP, SSH, SMB, RDP, DNS exploitation
-- **Protocol Analysis:** Packet capture, traffic analysis, man-in-the-middle
-- **Wireless Security:** WPA/WEP cracking, rogue AP detection
+**Lessons Learned:**
+- Automated tools (LinPEAS) don't catch everything
+- Manual enumeration and creative thinking are critical
+- SSH tunneling is essential for accessing internal services
+- Pattern-based file searching reveals hidden credentials
 
-### Tooling
-- **Burp Suite:** Proxy, repeater, intruder, scanner
-- **Metasploit Framework:** Module selection, payload generation, post-exploitation
-- **Nmap:** Port scanning, service detection, script scanning
-- **Custom Scripts:** Python and Bash automation
+**Writeup:** [internal.md](./writeups/boxes/internal.md)
 
 ---
 
-## 🔍 Methodology
+## 🎓 Skills Matrix
 
-My approach to challenges follows a structured methodology:
+| Skill Category | Proficiency Level | Notes |
+|---------------|------------------|-------|
+| **Web Exploitation** | ⭐⭐⭐⭐ | SQLi, XSS, LFI/RFI, authentication bypass |
+| **Network Enumeration** | ⭐⭐⭐⭐ | Nmap, service identification, protocol analysis |
+| **Linux Privilege Escalation** | ⭐⭐⭐⭐ | SUID, sudo, capabilities, manual enumeration |
+| **Windows Privilege Escalation** | ⭐⭐⭐ | Token impersonation, service exploits |
+| **Burp Suite** | ⭐⭐⭐⭐ | Proxy, repeater, intruder, extensions |
+| **Metasploit** | ⭐⭐⭐ | Module usage, payload generation, Meterpreter |
+| **Python Scripting** | ⭐⭐⭐⭐ | Automation, exploit development |
+| **Bash Scripting** | ⭐⭐⭐⭐ | Enumeration scripts, automation |
+| **Active Directory** | ⭐⭐ | Basic enumeration, Kerberoasting (learning) |
+| **Binary Exploitation** | ⭐⭐ | Buffer overflow basics (learning) |
 
-### 1. Reconnaissance
-- Passive information gathering
-- Service enumeration
-- Technology identification
-
-### 2. Scanning & Enumeration
-- Port scanning (Nmap)
-- Web directory enumeration (Gobuster, ffuf)
-- Service-specific enumeration (enum4linux, SMB, FTP, etc.)
-
-### 3. Vulnerability Analysis
-- Manual testing
-- Automated scanning
-- Version research
-- Exploit identification
-
-### 4. Exploitation
-- Proof of concept development
-- Exploit execution
-- Initial access
-
-### 5. Post-Exploitation
-- System enumeration
-- Privilege escalation
-- Lateral movement
-- Objective completion
-
-### 6. Documentation
-- Detailed notes
-- Screenshots
-- Command history
-- Lessons learned
+**Legend:** ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced | ⭐⭐⭐⭐ Expert | ⭐⭐⭐⭐⭐ Master
 
 ---
 
-## 🏆 Notable Achievements
+## 🚀 Next Goals
 
-### Badges Earned (18)
-- Webbed, World Wide Web, Intro to Web Hacking
-- Burp'ed, OWASP Top 10, SQL Slayer
-- Networking Nerd, cat linux.txt, Metasploitable
-- System Sniffer, Pentesting Principles, Authentication Striker
-- Pentester Tools, Gold League, Cyber Ready
-- Blue, Sword Apprentice, Shield Apprentice
-
-### Skills Demonstrated
-- **Web Security:** Advanced understanding of OWASP Top 10
-- **System Exploitation:** Linux and Windows privilege escalation
-- **Networking:** Comprehensive network security knowledge
-- **Tool Proficiency:** Burp Suite, Metasploit, Nmap, and more
-- **Automation:** Custom script development for efficiency
+- [ ] Complete "Internal" box writeup ✅ **DONE!**
+- [ ] Complete SOC Level 1 Path
+- [ ] Complete Offensive Pentesting Path  
+- [ ] Achieve 200 rooms completed
+- [ ] Participate in TryHackMe King of the Hill
+- [ ] Complete 10 Hard-level boxes
+- [ ] Develop advanced automation framework
+- [ ] Explore Active Directory exploitation path
+- [ ] Practice buffer overflow challenges
 
 ---
 
 ## 📚 Resources
 
-### Useful Links
-- [TryHackMe Platform](https://tryhackme.com/)
-- [TryHackMe Blog](https://blog.tryhackme.com/)
-- [Official Discord](https://discord.gg/tryhackme)
+### Custom Scripts Repository
+All custom scripts developed during challenges are available in the `/scripts` directory with full documentation.
 
-### Recommended Rooms for Beginners
-1. **Basic Pentesting** - Great introduction
-2. **OWASP Top 10** - Essential web security
-3. **Linux PrivEsc** - Fundamental privilege escalation
-4. **Burp Suite Basics** - Tool mastery
-5. **Metasploit** - Framework fundamentals
+### Badge Collection
+View all earned badges and their requirements in `/badges/README.md`
+
+### Progress Tracker
+Detailed room-by-room progress is tracked in `PROGRESS.md`
 
 ---
 
-## 🤝 Contributing
+## 🤝 Connect
 
-While this is a personal portfolio, I'm happy to:
-- Answer questions about specific challenges
-- Share additional tips and techniques
-- Discuss alternative approaches
-- Collaborate on tool development
-
-Feel free to open an issue or reach out!
+- **TryHackMe Profile:** [TheJker](https://tryhackme.com/p/TheJker)
+- **GitHub:** [AlperKurtulus](https://github.com/AlperKurtulus)
+- **Repository:** [ctf-security-portfolio](https://github.com/AlperKurtulus/ctf-security-portfolio)
 
 ---
 
-## ⚠️ Ethical Use
+## ⚠️ Disclaimer
 
-All content in this directory is for **educational purposes only**. Always:
+All writeups and techniques documented here are for educational purposes only. Always:
 - Obtain proper authorization before testing
-- Follow TryHackMe's Terms of Service
-- Practice responsible disclosure
-- Respect the platform and other users
+- Respect terms of service and legal boundaries
+- Practice ethical hacking principles
+- Never use these techniques on systems you don't own or have explicit permission to test
 
 ---
 
-## 📞 Contact
-
-- **TryHackMe:** [TheJker](https://tryhackme.com/p/TheJker)
-- **GitHub:** [@AlperKurtulus](https://github.com/AlperKurtulus)
+**Last Updated:** November 9, 2025  
+**Maintained by:** AlperKurtulus  
+**Status:** Actively updating with new challenges and writeups
 
 ---
 
-*Last Updated: November 2025*
+<div align="center">
+
+**📚 Learn | 🔒 Practice | 🎯 Master**
+
+*Continuous learning in cybersecurity*
+
+</div>
