@@ -4,7 +4,7 @@
 
 ![TryHackMe](https://img.shields.io/badge/TryHackMe-130%2B_Rooms-C11111?style=for-the-badge&logo=tryhackme)
 ![Root-me](https://img.shields.io/badge/Root--me-19_Challenges-0088CC?style=for-the-badge)
-![Paths](https://img.shields.io/badge/Learning_Paths-3_Completed-success?style=for-the-badge)
+![Paths](https://img.shields.io/badge/Learning_Paths-4_Completed-success?style=for-the-badge)
 
 **Penetration Testing | Web Security | Security Automation**
 
