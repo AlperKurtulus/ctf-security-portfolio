@@ -22,7 +22,7 @@
 | Defensive Security & Blue Team | 8 | 🟢 Active |
 | Specialized Topics | 7 | 🟢 Active |
 | Scripting & Programming | 4 | ✅ Complete |
-| CTF Challenges & Boxes | 9 | 🟢 Active |
+| CTF Challenges & Boxes | 10 | 🟢 Active |
 | Informational & Misc | 4 | ✅ Complete |
 
 **Legend:**  
@@ -251,7 +251,7 @@
 
 ---
 
-## 🚩 CTF Challenges & Boxes (9)
+## 🚩 CTF Challenges & Boxes (10)
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -264,6 +264,36 @@
 | Alfred | Easy | Jenkins exploitation, Windows tokens |
 | Ice | Easy | Windows exploitation, privilege escalation |
 | Ignite | Easy | CMS exploitation, configuration vulnerabilities |
+| Internal | Hard | WordPress, SSH tunneling, Jenkins, Docker, multi-stage privesc |
+
+---
+
+---
+
+## 📝 Internal Box
+
+**Completed:** November 9, 2025  
+**Difficulty:** Hard ⭐⭐⭐  
+**Time:** 4.5 hours  
+
+### Attack Chain:Nmap → Gobuster → WordPress → WPScan → Theme Editor RCE ↓ www-data shell → /opt/wp-save.txt → aubreanna user ↓ jenkins.txt → SSH Tunnel → Internal Jenkins → Hydra ↓ admin:spongebob → Script Console → jenkins container ↓ /opt/note.txt → root credentials → ROOT
+
+### Key Techniques:
+- WordPress theme editor exploitation (RCE)
+- Manual credential hunting with pattern-based searching
+- SSH local port forwarding to internal services
+- Hydra web form brute force
+- Jenkins Script Console exploitation (Groovy)
+- Docker container enumeration
+- Multi-layered privilege escalation (6 stages)
+
+### Lessons Learned:
+- LinPEAS doesn't catch everything - manual enumeration is critical
+- Pattern-based file searching reveals hidden credentials
+- SSH tunneling is essential for accessing internal services
+- Multi-layered defenses can all fail if each layer has weaknesses
+
+**Full Writeup:** [internal.md](./writeups/boxes/internal.md)
 
 ---
 
