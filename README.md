@@ -1,28 +1,69 @@
-# Welcome to CTF Security Portfolio
+# ctf-security-portfolio
 
-## New Root-Me Write-ups
-We have published 7 new detailed write-ups:
-- **Back to School** (socket programming)
-- **Captcha Me If You Can** (OCR automation)
-- **Encoded String** (Base64 decoding)
-- **The Roman Wheel** (ROT13 cipher)
-- **Uncompress Me** (zlib compression)
-- **Mathematic Progression** (algorithm optimization)
-- **Pickle Deserialization** (RCE vulnerability)
+![Badges](https://img.shields.io/badge/tryhackme-130%2B%20rooms-brightgreen.svg) ![Root-me](https://img.shields.io/badge/root--me-7%2B%20writeups-orange.svg) ![OverTheWire](https://img.shields.io/badge/overthewire-level%2015%2B-red.svg) ![Learning Paths](https://img.shields.io/badge/completed-4%20learning%20paths-blue.svg)
 
-## Statistics
-![Write-ups: 7+ Published](https://img.shields.io/badge/Write--ups-7%2B%20Published-brightgreen)
+## Repository Overview
+This repository contains a comprehensive collection of my security portfolio built through various platforms and challenges. It showcases my progress and learning in the field of cybersecurity.
+
+## Current Statistics
+| Platform      | Stats          |
+|---------------|----------------|
+| TryHackMe     | 130+ rooms     |
+| Root-me       | 7+ writeups    |
+| OverTheWire   | Level 15+      |
+| Completed Learning Paths | 4     |
+
+## Latest Updates
+- **Internal Box**: Hard difficulty, completed on November 9, 2025, duration 4.5 hours.
+
+## Attack Chain Visualization for Internal Box
+1. WordPress Theme Editor
+2. www-data shell
+3. Manual Credential Hunting
+4. aubreanna user
+5. SSH Tunneling
+6. Internal Jenkins
+7. Hydra Brute Force
+8. Jenkins admin
+9. Script Console RCE
+10. Docker container
+11. Container Enumeration
+12. ROOT access
 
 ## Repository Structure
-- rootme/
-  - programming/
-  - web-server/
-  - ...
+- `tryhackme/writeups/boxes/internal.md`
 
-Last Updated: November 9, 2025
+## Completed Learning Paths
+- Jr Penetration Tester  
+- Web Fundamentals  
+- Pre Security  
+- Cyber Security 101
 
-## About This Repository
-This repository is dedicated to showcasing various Capture The Flag (CTF) challenges and write-ups. You can find a collection of challenges categorized by type, along with solutions and explanations for each.
+## Key Achievements
+- Mastered various penetration testing techniques.
+- Successfully completed multiple CTF challenges.
+- Contributed to open-source security tools.
 
-## License
-This repository is licensed under the MIT License. See LICENSE file for details.
+## Skills Matrix
+| Skill                | Proficiency |
+|----------------------|-------------|
+| Penetration Testing   | ★★★★★        |
+| Web Application Security | ★★★★☆        |
+| Networking            | ★★★★☆        |
+| Incident Response     | ★★★★☆        |
+| Malware Analysis      | ★★★☆☆        |
+
+## Featured Tools and Scripts
+- Burp Suite
+- Nmap
+- Metasploit
+- Wireshark
+
+## Connect
+- [LinkedIn](https://www.linkedin.com)
+- [Twitter](https://twitter.com)
+
+## Disclaimer
+This repository is for educational purposes only. All activities are performed in a controlled environment.
+
+## Last Updated: November 9, 2025
