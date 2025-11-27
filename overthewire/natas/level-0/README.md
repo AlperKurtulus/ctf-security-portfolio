@@ -78,14 +78,10 @@ The script sends an HTTP request with Basic Auth, parses the HTML for the passwo
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-> **Note:** Screenshots will be added by the user.
-
-| Screenshot | Description |
-|------------|-------------|
-| `images/natas0-homepage.png` | Natas0 homepage showing the hint |
-| `images/natas0-source.png` | Page source showing the password in HTML comment |
+![Natas0 Homepage](./images/01-homepage.png)
+![HTML Source](./images/02-page-source.png)
 
 ---
 

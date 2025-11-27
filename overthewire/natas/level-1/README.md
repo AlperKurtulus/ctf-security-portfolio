@@ -88,14 +88,10 @@ The script bypasses the JavaScript restriction entirely by making a direct HTTP 
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-> **Note:** Screenshots will be added by the user.
-
-| Screenshot | Description |
-|------------|-------------|
-| `images/natas1-blocked.png` | Right-click blocked message |
-| `images/natas1-source.png` | Page source showing the password |
+![Right-Click Blocked](./images/01-right-click-blocked.png)
+![Source Code](./images/02-page-source.png)
 
 ---
 
