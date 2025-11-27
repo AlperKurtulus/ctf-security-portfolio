@@ -109,15 +109,11 @@ The script directly accesses the known secret path and extracts the password fro
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-> **Note:** Screenshots will be added by the user.
-
-| Screenshot | Description |
-|------------|-------------|
-| `images/natas3-robots-txt.png` | robots.txt showing disallowed path |
-| `images/natas3-s3cr3t-directory.png` | Secret directory listing |
-| `images/natas3-users-txt.png` | Contents of users.txt with natas4 password |
+![robots.txt](./images/01-robots-txt.png)
+![Secret Directory Listing](./images/02-s3cr3t-dir.png)
+![users.txt with natas4 password](./images/03-users-txt.png)
 
 ---
 

@@ -103,14 +103,10 @@ The script accesses the `/files/` directory, detects `users.txt`, parses it, and
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-> **Note:** Screenshots will be added by the user.
-
-| Screenshot | Description |
-|------------|-------------|
-| `images/natas2-files-directory.png` | Directory listing showing files |
-| `images/natas2-users-txt.png` | Contents of users.txt with credentials |
+![Files Directory](./images/01-files-dir.png)
+![users.txt Contents](./images/02-users-txt.png)
 
 ---
 
