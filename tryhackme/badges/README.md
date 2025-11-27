@@ -2,11 +2,11 @@
 
 Complete collection of earned badges and their associated achievements on TryHackMe.
 
-![Badges](https://img.shields.io/badge/Total_Badges-18-gold?style=for-the-badge)
+![Badges](https://img.shields.io/badge/Total_Badges-25-gold?style=for-the-badge)
 
 ---
 
-## 🏅 Badge Collection (18 Total)
+## 🏅 Badge Collection (25 Total)
 
 ### 🌐 Web Security & Application Testing
 
