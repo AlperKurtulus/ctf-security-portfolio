@@ -1,6 +1,6 @@
 # ctf-security-portfolio
 
-![Badges](https://img.shields.io/badge/tryhackme-130%2B%20rooms-brightgreen.svg) ![Root-me](https://img.shields.io/badge/root--me-7%2B%20writeups-orange.svg) ![OverTheWire](https://img.shields.io/badge/overthewire-level%2015%2B-red.svg) ![Learning Paths](https://img.shields.io/badge/completed-4%20learning%20paths-blue.svg)
+![Badges](https://img.shields.io/badge/tryhackme-140%2B%20rooms-brightgreen.svg) ![Root-me](https://img.shields.io/badge/root--me-13%2B%20writeups-orange.svg) ![OverTheWire](https://img.shields.io/badge/overthewire-level%204%2B-red.svg) ![Learning Paths](https://img.shields.io/badge/completed-5%20learning%20paths-blue.svg)
 
 ## Repository Overview
 This repository contains a comprehensive collection of my security portfolio built through various platforms and challenges. It showcases my progress and learning in the field of cybersecurity.
