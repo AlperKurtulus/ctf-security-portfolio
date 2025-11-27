@@ -60,8 +60,8 @@ This repository contains a comprehensive collection of my security portfolio bui
 - Wireshark
 
 ## Connect
-- [LinkedIn](https://www.linkedin.com)
-- [Twitter](https://twitter.com)
+- [LinkedIn]([https://www.linkedin.com](https://www.linkedin.com/in/alper-kurtulu%C5%9F-a51a782a7/))
+
 
 ## Disclaimer
 This repository is for educational purposes only. All activities are performed in a controlled environment.
