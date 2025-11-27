@@ -227,17 +227,18 @@ for line in lines:
 
 ---
 
+## 📷 Screenshots
+
+- ![FTP stream with USER/PASS](./images/FTP-Auth.png)
+
+---
+
 ## 🔗 Navigation
 
 - [← Back to Network Overview](../README.md)
 - [Previous: Ethernet Frame](../ethernet-frame/README.md)
 - [Next: Telnet Authentication →](../telnet-auth/README.md)
 
----
-
-## 📷 Screenshots
-
-*Screenshots will be added to the `images/` folder for visual reference of the analysis process.*
 
 ---
 
