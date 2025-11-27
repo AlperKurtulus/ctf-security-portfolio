@@ -1,8 +1,7 @@
 # TryHackMe Progress Tracker
 
 **Profile:** [TheJker](https://tryhackme.com/p/TheJker)  
-**Total Rooms Completed:** 130+  
-**Last Updated:** November 2025
+**Total Rooms Completed:** 140+  
 
 ---
 
@@ -31,7 +30,7 @@
 
 ---
 
-## 🌐 Web Application Security (30+)
+## 🌐 Web Application Security
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -65,10 +64,16 @@
 | CORS Misconfiguration | Medium | Cross-Origin Resource Sharing exploits |
 | Deserialization | Hard | Insecure deserialization, RCE |
 | OAuth | Medium | OAuth flow, token theft, authorization bypass |
-
+| XSS | Medium | Cross-Site Scripting, JavaScript injection, payload crafting
+| CSRF | Medium | Cross-Site Request Forgery, token bypass, anti-CSRF
+| Dom-Based Attacks | Medium | DOM XSS, client-side exploitation, sink/source analysis
+| HTTP Request Smuggling | Hard | Request splitting, HTTP desync, protocol chaining
+| HTTP/2 Request Smuggling | Hard | HTTP/2 protocol, smuggling techniques, advanced desync
+| Request Smuggling: WebSockets | Hard | WebSocket protocol, hybrid smuggling, advanced chaining
+| HTTP Browser Desync | Hard | Browser/server sync issues, desync exploitation, modern web
 ---
 
-## 💉 Injection Vulnerabilities (16)
+## 💉 Injection Vulnerabilities
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -91,7 +96,7 @@
 
 ---
 
-## 🔐 Authentication & Authorization (8)
+## 🔐 Authentication & Authorization
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -106,7 +111,7 @@
 
 ---
 
-## 🌐 Network Security & Reconnaissance (23)
+## 🌐 Network Security & Reconnaissance
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -136,7 +141,7 @@
 
 ---
 
-## 🐧 Linux Security (6)
+## 🐧 Linux Security
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -149,7 +154,7 @@
 
 ---
 
-## 🪟 Windows Security (8)
+## 🪟 Windows Security
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -164,7 +169,7 @@
 
 ---
 
-## 🛠️ Tools & Exploitation (11)
+## 🛠️ Tools & Exploitation
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -182,7 +187,7 @@
 
 ---
 
-## 🔒 Cryptography (3)
+## 🔒 Cryptography
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -192,7 +197,7 @@
 
 ---
 
-## 📚 Fundamentals & Methodology (12)
+## 📚 Fundamentals & Methodology 
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -211,7 +216,7 @@
 
 ---
 
-## 🛡️ Defensive Security & Blue Team (8)
+## 🛡️ Defensive Security & Blue Team
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -226,7 +231,7 @@
 
 ---
 
-## 🎯 Specialized Topics (7)
+## 🎯 Specialized Topics
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -240,7 +245,7 @@
 
 ---
 
-## 💻 Scripting & Programming (4)
+## 💻 Scripting & Programming
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -251,7 +256,7 @@
 
 ---
 
-## 🚩 CTF Challenges & Boxes (10)
+## 🚩 CTF Challenges & Boxes
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -268,36 +273,7 @@
 
 ---
 
----
-
-## 📝 Internal Box
-
-**Completed:** November 9, 2025  
-**Difficulty:** Hard ⭐⭐⭐  
-**Time:** 4.5 hours  
-
-### Attack Chain:Nmap → Gobuster → WordPress → WPScan → Theme Editor RCE ↓ www-data shell → /opt/wp-save.txt → aubreanna user ↓ jenkins.txt → SSH Tunnel → Internal Jenkins → Hydra ↓ admin:spongebob → Script Console → jenkins container ↓ /opt/note.txt → root credentials → ROOT
-
-### Key Techniques:
-- WordPress theme editor exploitation (RCE)
-- Manual credential hunting with pattern-based searching
-- SSH local port forwarding to internal services
-- Hydra web form brute force
-- Jenkins Script Console exploitation (Groovy)
-- Docker container enumeration
-- Multi-layered privilege escalation (6 stages)
-
-### Lessons Learned:
-- LinPEAS doesn't catch everything - manual enumeration is critical
-- Pattern-based file searching reveals hidden credentials
-- SSH tunneling is essential for accessing internal services
-- Multi-layered defenses can all fail if each layer has weaknesses
-
-**Full Writeup:** [internal.md](./writeups/boxes/internal.md)
-
----
-
-## 📋 Informational & Miscellaneous (4)
+## 📋 Informational & Miscellaneous
 
 | Room | Difficulty | Key Topics |
 |------|-----------|------------|
@@ -307,6 +283,12 @@
 | OSINT | Easy | Open-source intelligence gathering |
 
 ---
+
+🧠 Cyber Threat Intelligence & Networking (3)
+
+| Intro to Cyber Threat Intel | Info | Threat intelligence basics, OSINT, reporting
+| Wifi Hacking 101 | Medium | Wireless security, WPA/2 attacks, WiFi cracking
+| Advent of Cyber Prep Track | Easy | Event prep, multi-topic CTF labs, festive security
 
 ## 🎓 Learning Path Completion
 
@@ -365,62 +347,17 @@
 
 ---
 
-## 📈 Statistics
+###✅ Web Application Pentesting Path
 
-### Difficulty Breakdown
-- **Info:** 25 rooms
-- **Easy:** 75 rooms
-- **Medium:** 25 rooms
-- **Hard:** 5 rooms
+***Completed:** Yes
+**Rooms:** 27
+**Duration:** 2 months
+**Key Skills:** Web vulnerabilities, injection attacks, authentication bypass, client/server exploitation
 
-### Time Investment
-- **Total Learning Hours:** 500+ hours
-- **Average Room Completion Time:** 2-4 hours
-- **Complex Rooms:** 6-8 hours
-- **Active Since:** 2023
+**Included Rooms:**
 
-### Skill Progression
-- **Beginner → Intermediate:** 3 months
-- **Intermediate → Advanced:** 6 months
-- **Current Level:** Advanced (continuously improving)
-
----
-
-## 🎯 Next Goals
-
-- [ ] Complete SOC Level 1 Path
-- [ ] Complete Offensive Pentesting Path
-- [ ] Achieve 200 rooms completed
-- [ ] Participate in TryHackMe King of the Hill
-- [ ] Contribute writeups for 20+ additional rooms
-- [ ] Develop more advanced automation scripts
-- [ ] Explore red team operations path
-
----
-
-## 📝 Notes
-
-### Key Takeaways
-1. **Methodology is crucial** - Structured approach leads to better results
-2. **Enumeration is key** - More time enumerating = faster exploitation
-3. **Documentation matters** - Detailed notes accelerate learning
-4. **Practice makes perfect** - Repetition builds muscle memory
-5. **Community helps** - Discussion forums provide valuable insights
-
-### Favorite Rooms
-1. **OWASP Top 10** - Comprehensive web security introduction
-2. **Linux PrivEsc** - Essential for system exploitation
-3. **Metasploit Rooms** - Powerful framework mastery
-4. **Blue** - Practical Windows exploitation
-5. **Burp Suite Series** - Critical tool for web testing
-
-### Most Challenging
-1. **Attacking Active Directory** - Complex multi-stage exploitation
-2. **Zero Logon** - Advanced AD vulnerability
-3. **DirtyCOW** - Kernel exploitation complexity
-4. **Advanced SQL Injection** - WAF bypass techniques
-5. **Red Team Recon** - Sophisticated reconnaissance methods
-
----
-
-*This progress tracker is continuously updated as new rooms are completed.*
+-Authentication(6)
+-Injection Attacks(7)
+-Advanced Server-Side Attacks(6)
+-Advanced Client-Side Attacks(4)
+-HTTP Request Smuggling(4)

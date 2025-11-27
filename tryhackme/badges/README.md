@@ -10,6 +10,30 @@ Complete collection of earned badges and their associated achievements on TryHac
 
 ### 🌐 Web Security & Application Testing
 
+### 🕵️‍♂️HTTP Smuggler
+**Earned:** Proven expertise in HTTP request smuggling attacks
+**Requirements:** Complete HTTP request smuggling labs and challenges on TryHackMe (including request/response desync and HTTP/2 labs)
+**Skills Demonstrated:**
+
+- Understanding and exploiting HTTP Smuggling techniques
+- Detecting vulnerable server chains
+- HTTP/1 & HTTP/2 protocol attack scenarios
+- Request desynchronization
+- Completing advanced HTTP Smuggling labs
+
+### 🔒Client-Side Champ
+
+**Earned:** Demonstrated proficiency in client-side web security
+**Requirements:** Successfully complete client-side security focused rooms and challenges on TryHackMe (like XSS, DOM security, CORS)
+**Skills Demonstrated:**
+
+- Web browser security fundamentals
+- Cross-Site Scripting (XSS) detection & exploitation
+- DOM-based attack analysis
+- Identifying insecure client-side code
+- CSRF & CORS defenses
+
+
 #### 🕸️ Webbed
 **Earned:** Introduction to Web Application Security  
 **Requirements:** Complete web security fundamentals  
@@ -205,116 +229,6 @@ Complete collection of earned badges and their associated achievements on TryHac
 - Incident detection
 - Log analysis basics
 
----
-
-## 📊 Badge Statistics
-
-### By Category
-- **Web Security:** 6 badges (33%)
-- **Network & Systems:** 4 badges (22%)
-- **Tools & Methodology:** 3 badges (17%)
-- **Progression:** 5 badges (28%)
-
-### Skill Coverage
-- **Web Application Security:** ⭐⭐⭐⭐⭐
-- **Network Security:** ⭐⭐⭐⭐⭐
-- **System Exploitation:** ⭐⭐⭐⭐
-- **Tool Proficiency:** ⭐⭐⭐⭐⭐
-- **Methodology:** ⭐⭐⭐⭐
-
----
-
-## 🎯 Badge Earning Tips
-
-### For Web Security Badges
-1. Complete OWASP Top 10 room thoroughly
-2. Practice with Burp Suite extensively
-3. Master SQL injection techniques
-4. Understand web application architecture
-5. Learn various injection techniques
-
-### For Network & System Badges
-1. Study networking fundamentals
-2. Practice with Nmap regularly
-3. Complete Linux/Windows fundamentals
-4. Master Metasploit framework
-5. Practice system enumeration
-
-### For Methodology Badges
-1. Follow structured pentesting methodology
-2. Practice with various security tools
-3. Document your processes
-4. Complete learning paths
-5. Engage with the community
-
-### For Progression Badges
-1. Maintain consistent learning schedule
-2. Complete rooms regularly
-3. Participate in challenges
-4. Set milestone goals
-5. Track your progress
-
----
-
-## 🚀 Next Badge Goals
-
-### In Progress
-- [ ] **Cryptography Expert** - Master cryptography challenges
-- [ ] **Script Kiddie** - Complete scripting challenges
-- [ ] **Active Reconnaissance** - Advanced recon techniques
-
-### Planned
-- [ ] **Red Team Master** - Complete red team path
-- [ ] **Blue Team Master** - Complete blue team path
-- [ ] **CTF Veteran** - Participate in multiple CTF events
-
----
-
-## 📚 Badge Resources
-
-### Official Resources
-- [TryHackMe Badge System](https://tryhackme.com/badges)
-- [Learning Paths](https://tryhackme.com/paths)
-- [Room Catalog](https://tryhackme.com/hacktivities)
-
-### Community Resources
-- TryHackMe Discord
-- Reddit r/tryhackme
-- TryHackMe Blog
-
----
-
-## 🎓 Skills Validated
-
-These badges validate proficiency in:
-
-✅ Web application security testing  
-✅ Network reconnaissance and enumeration  
-✅ System exploitation (Linux & Windows)  
-✅ Security tool usage and automation  
-✅ Penetration testing methodology  
-✅ Offensive and defensive security concepts  
-✅ Continuous learning and improvement  
-
----
-
-## 📈 Badge Journey Timeline
-
-**2023 - Beginning**
-- Pre Security Path completion
-- Basic web and network badges
-
-**2024 - Growth**
-- Jr Penetration Tester Path completion
-- Advanced web security badges
-- Tool proficiency badges
-
-**2025 - Mastery**
-- Web Fundamentals Path completion
-- 18 badges achieved
-- Continuing advanced learning
-
----
 
 ## 🔗 Profile Link
 
