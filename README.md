@@ -25,8 +25,10 @@ This repository contains a comprehensive collection of my security portfolio bui
 - Successfully completed multiple CTF challenges.
 - Contributed to open-source security tools.
 
-## Connect
-- [LinkedIn]([https://www.linkedin.com](https://www.linkedin.com/in/alper-kurtulu%C5%9F-a51a782a7/))
+## Contact
+- **LinkedIn:** [Alper Kurtuluş](https://www.linkedin.com/in/alper-kurtulu%C5%9F-a51a782a7/)
+- **GitHub:** [@AlperKurtulus](https://github.com/AlperKurtulus)
+- **TryHackMe:** [TheJker](https://tryhackme.com/p/TheJker)
 
 
 ## Disclaimer
