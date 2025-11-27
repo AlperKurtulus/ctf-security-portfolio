@@ -1,38 +1,94 @@
-# Natas Level 0 Writeup
+# Natas Level 0 → Level 1
 
-## Challenge Description
-Natas Level 0 is the first level of the Natas series in the OverTheWire wargame. The objective of this level is to retrieve the password for the next level from the HTML source of the page. Users are introduced to the concept of viewing HTML comments and how some sensitive data can be hidden in places that may not be immediately obvious, such as HTML comments.
-
-## Step-by-Step Solution
-1. **Access the Level Page**: Navigate to the Natas Level 0 page (e.g., http://natas0.natas.labs.overthewire.org/).
-   
-2. **View the HTML Source**: Right-click on the page and select 'View Page Source' or use keyboard shortcuts (Ctrl+U on Windows/Linux or Cmd+U on Mac).
-   
-3. **Search for Password**: Look through the HTML comments in the source. You can find the password hidden within the comments. For example:
-   ```html
-   <!-- The password for the next level is: 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq -->
-   ```  
-4. **Copy the Password**: Carefully copy the password found in the comments.
-5. **Log into Next Level**: Use the retrieved password to log into Natas Level 1.
-
-## Automated Solution Reference
-For those looking for a programmatic approach, consider utilizing the script `natas0_v2.py`. This script automates the process of retrieving the password from the HTML comments by performing an HTTP request and parsing the response. You can find the script on GitHub or other programming repositories.
-
-## What was Learned
-This challenge taught valuable lessons about:
-- **HTML Source Inspection**: Understanding how to inspect the source code of web pages is crucial for web security, as this is how programmers can sometimes inadvertently expose sensitive information.
-- **Security Implications**: Developers should avoid placing sensitive information in comments or any non-secure place on the web page, as these can be easily accessed by unauthorized users.
-
-## Tools Used
-- Web Browser: For navigating and inspecting the web pages.
-- Python: To create automated scripts for retrieving hidden information.
-
-## Navigation Links
-- [Natas Level 0](http://natas0.natas.labs.overthewire.org/)  
-- [Natas Level Documentation](https://overthewire.org/wargames/natas/)  
-- [GitHub natas0_v2.py](https://github.com/username/natas0_v2) (replace with the actual link)  
+**Difficulty:** ⭐ Very Easy  
+**Date Completed:** 2025-11-12  
+**Author:** AlperKurtulus
 
 ---
-## Current Date and Time
-- UTC: 2025-11-27 18:16:39
-- User: AlperKurtulus
+
+## Level Goal
+
+Find the password for the next level hidden somewhere on the page.
+
+**Access Information:**
+- URL: http://natas0.natas.labs.overthewire.org
+- Username: `natas0`
+- Password: `natas0`
+
+---
+
+## Solution
+
+### Step 1: Access the Challenge Page
+
+Navigate to http://natas0.natas.labs.overthewire.org and log in with the credentials provided above.
+
+### Step 2: View the Page Source
+
+The page displays: *"You can find the password for the next level on this page."*
+
+Right-click on the page and select **"View Page Source"** (or use `Ctrl+U` / `Cmd+U`).
+
+### Step 3: Find the Password
+
+In the HTML source code, you'll find an HTML comment containing the password:
+
+```html
+<!--The password for natas1 is 0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq -->
+```
+
+---
+
+## Automated Solution
+
+A Python script is provided to automate this challenge:
+
+📄 **Script:** [`natas0_v2.py`](./natas0_v2.py)
+
+```bash
+# Run from this directory
+python3 natas0_v2.py
+```
+
+The script sends an HTTP request with Basic Auth, parses the HTML for the password pattern, and saves it to `natas1_password.txt`.
+
+---
+
+## What I Learned
+
+### Key Takeaways
+- **HTML comments are not hidden from users** — they are visible to anyone who views the page source.
+- **View Page Source** is a fundamental technique in web security assessments.
+- Sensitive information should never be stored in HTML comments or client-side code.
+
+### Security Implications
+- Developers sometimes leave debugging information, credentials, or internal notes in HTML comments.
+- Always review page source during security assessments — it's often the first place to check.
+- This vulnerability falls under **Information Disclosure** in security terminology.
+
+---
+
+## Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| Web Browser | Access challenge and view page source |
+| Python + Requests | Automated HTTP requests with Basic Auth |
+| Regular Expressions | Parse HTML to extract password |
+
+---
+
+## Screenshots
+
+> **Note:** Screenshots will be added by the user.
+
+| Screenshot | Description |
+|------------|-------------|
+| `images/natas0-homepage.png` | Natas0 homepage showing the hint |
+| `images/natas0-source.png` | Page source showing the password in HTML comment |
+
+---
+
+## Navigation
+
+[← Previous: Overview](../README.md) | [Overview](../README.md) | [Next: Level 1 →](../level-1/README.md)
