@@ -1,8 +1,9 @@
 # Root-me Challenge Solutions
 
-![Root-me](https://img.shields.io/badge/Root--me-19_Challenges-0088CC?style=for-the-badge)
+![Root-me](https://img.shields.io/badge/Root--me-22_Challenges-0088CC?style=for-the-badge)
 ![App-Script](https://img.shields.io/badge/App--Script-14-success?style=flat)
 ![Programming](https://img.shields.io/badge/Programming-5-blue?style=flat)
+![Network](https://img.shields.io/badge/Network-3-orange?style=flat)
 
 Complete solutions and writeups for Root-me challenges.
 
@@ -14,7 +15,8 @@ Complete solutions and writeups for Root-me challenges.
 |----------|------------------|------------------------|
 | App-Script | 14 | ⭐ Easy: 8, ⭐⭐ Medium: 6 |
 | Programming | 5 | ⭐ Easy: 3, ⭐⭐ Medium: 2 |
-| **Total** | **19** | **Completed** |
+| Network | 3 | ⭐ Easy: 3 |
+| **Total** | **22** | **Completed** |
 
 ---
 
@@ -30,6 +32,11 @@ rootme/
 │   ├── bash-system-2.md
 │   ├── python-input.md
 │   └── perl-command-injection.md
+├── network/                     # Network analysis challenges
+│   ├── README.md
+│   ├── ethernet-frame/
+│   ├── ftp-auth/
+│   └── telnet-auth/
 └── programming/                 # Programming challenges
     ├── README.md
     ├── tcp-back-to-school.md
@@ -86,6 +93,22 @@ Network programming and encoding challenges:
 - Compression algorithms
 - HTTP protocol manipulation
 
+### 🌐 [Network](./network/) (3 Challenges)
+
+Network analysis and packet capture challenges:
+
+**Completed Challenges:**
+1. **Ethernet Frame** ⭐ - Raw frame analysis, Base64 decoding
+2. **FTP Authentication** ⭐ - Log analysis, UTF-16 encoding
+3. **Telnet Authentication** ⭐ - PCAP analysis, TCP reassembly
+
+**Key Skills:**
+- Packet capture analysis (PCAP)
+- Protocol identification
+- Credential extraction
+- Network traffic inspection
+- Scapy packet manipulation
+
 ---
 
 ## 🔍 Featured Writeups
@@ -123,6 +146,20 @@ Decoding encoded strings received over TCP connection.
 - **Difficulty:** ⭐ Easy
 - **Points:** 5
 - **Skills:** Encoding schemes, string manipulation
+
+### Network Highlights
+
+#### Ethernet Frame
+Analyzing raw Ethernet frame data to extract HTTP Basic Authentication credentials.
+- **Difficulty:** ⭐ Easy
+- **Points:** 10
+- **Skills:** Hex parsing, Base64 decoding
+
+#### Telnet Authentication
+Extracting credentials from Telnet traffic using PCAP analysis with Scapy.
+- **Difficulty:** ⭐ Easy
+- **Points:** 10
+- **Skills:** PCAP analysis, TCP reassembly
 
 ---
 
@@ -178,6 +215,7 @@ import zlib        # Compression
 import requests    # HTTP requests
 import pickle      # Serialization
 import yaml        # YAML parsing
+from scapy.all import *  # Packet analysis
 ```
 
 ### System Tools
@@ -191,14 +229,15 @@ import yaml        # YAML parsing
 ## 📈 Progress Tracker
 
 ### Difficulty Breakdown
-- **Easy (⭐):** 11 challenges
+- **Easy (⭐):** 14 challenges
 - **Medium (⭐⭐):** 7 challenges
 - **Hard (⭐⭐⭐):** 1 challenge
 
 ### Points Earned
-- **Total Points:** 165
+- **Total Points:** 190
 - **App-Script:** 125 points
 - **Programming:** 40 points
+- **Network:** 25 points
 
 ### Time Investment
 - **Average Time per Challenge:** 45 minutes
@@ -268,6 +307,13 @@ import yaml        # YAML parsing
 - Handle exceptions properly
 - Debug with print statements
 
+**Network:**
+- Use Wireshark for initial analysis
+- Scapy for automated parsing
+- Look for cleartext protocols
+- Follow TCP streams
+- Check for credential patterns
+
 ---
 
 ## 📖 Resources
@@ -324,7 +370,7 @@ import yaml        # YAML parsing
 
 <div align="center">
 
-**🎯 19/∞ Challenges Solved | Keep Learning | Keep Hacking**
+**🎯 22/∞ Challenges Solved | Keep Learning | Keep Hacking**
 
 *Last Updated: November 2025*
 
