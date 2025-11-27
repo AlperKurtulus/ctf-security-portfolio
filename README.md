@@ -9,7 +9,7 @@ This repository contains a comprehensive collection of my security portfolio bui
 | Platform      | Stats          |
 |---------------|----------------|
 | TryHackMe     | 130+ rooms     |
-| Root-me       | 7+ writeups    |
+| Root-me       | In Progress    |
 | OverTheWire   | Level 15+      |
 | Completed Learning Paths | 4     |
 
