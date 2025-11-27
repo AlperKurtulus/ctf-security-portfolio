@@ -253,17 +253,17 @@ pip install scapy
 
 ---
 
+## 📷 Screenshots
+
+- ![Telnet login and session](./images/Telnet-Auth.png)
+
+---
+
 ## 🔗 Navigation
 
 - [← Back to Network Overview](../README.md)
 - [Previous: FTP Authentication](../ftp-auth/README.md)
 - [Ethernet Frame](../ethernet-frame/README.md)
-
----
-
-## 📷 Screenshots
-
-*Screenshots will be added to the `images/` folder for visual reference of the analysis process.*
 
 ---
 
