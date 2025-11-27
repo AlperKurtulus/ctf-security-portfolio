@@ -19,7 +19,14 @@ def solve_natas1():
 
     print("[*] Solving Natas1...")
 
-    response = requests.get(url, auth=(username, password), timeout=10)
+    try:
+        response = requests.get(url, auth=(username, password), timeout=10)
+        if response.status_code != 200:
+            print(f"[-] Error: Status code {response.status_code}")
+            return None
+    except requests.RequestException as e:
+        print(f"[-] Network error: {e}")
+        return None
 
     match = re.search(r"password for natas2 is\s+(\w+)", response.text)
 
@@ -32,6 +39,7 @@ def solve_natas1():
 
         return next_password
 
+    print("[-] Password not found in response")
     return None
 
 

