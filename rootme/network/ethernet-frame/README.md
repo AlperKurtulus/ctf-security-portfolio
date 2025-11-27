@@ -200,6 +200,12 @@ clean = re.sub(r'[^0-9a-fA-F]', '', dirty_data)
 
 ---
 
+## 📷 Screenshots
+
+- ![Decoded HTTP headers](./images/Ethernet-frame.png)
+
+---
+
 ## 🔗 Navigation
 
 - [← Back to Network Overview](../README.md)
@@ -208,11 +214,6 @@ clean = re.sub(r'[^0-9a-fA-F]', '', dirty_data)
 
 ---
 
-## 📷 Screenshots
-
-*Screenshots will be added to the `images/` folder for visual reference of the analysis process.*
-
----
 
 **Date Completed:** November 2025  
 **Time Taken:** 20 minutes  
